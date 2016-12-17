@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form name="loginForm" action="company.html">
+
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="name" name="name" class="form-control" id="name" placeholder="name" value="" required minlength=2>
+        </div>
+        <div class="form-group">
+          <label for="secondname">secondname</label>
+          <input type="secondname" name="secondname" class="form-control" id="secondname" placeholder="secondname" required minlength=2>
+        </div>
+        <select class="form-control" name="gender">
+          <option value="male">male</option>
+          <option value="female">female</option>
+        </select>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <label for="pass">Password</label>
+          <input type="pass" name="pass" class="form-control" id="pass" placeholder="password" required minlength=5>
+
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<button id="testButton" >test</button>
+<script src="js/loginVerify.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html lang="ru">
+<!-- Заголовок веб-страницы -->
+
+<head>
+  <!-- Кодировка веб-страницы -->
+  <meta charset="utf-8">
+  <!-- Предназначен для управления режимом отображением веб-страницы в браузерах Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Включает масштабирование на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Текст заголовка веб-страницы -->
+  <title>Basic Bootstrap Template</title>
+  <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+  <link rel="stylesheet" href="css/libs/bootstrap-theme.min.css">
+  <link href="css/form.css" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="js/libs/MyRequest.js"></script>
+  <script type="text/javascript" src="js/libs/elementConstructor.js"></script>
+
+
+</head>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">TotalCompanies</div>
+        <div class="panel-body">
+          <div class = "loader">
+            
+            <img src="img/three-dots.svg">
+            </div>
+          <div class="total-companies">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      
+        <div class="panel panel-default">
+          <div class="panel-heading">List of Companies</div>
+          <div class="panel-body">
+            <div class = "loader">
+            
+            <img src="img/three-dots.svg">
+            </div>
+            <div class="list-of-companies">
+            <div id="class-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Company-Partners-Block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          
+          <div class="panel-heading">Company Partners
+            <span class="sort">
+              <span >partners</span>
+              <span >Value</span>
+            </span> 
+          </div>
+          
+          <div class="panel-body"></div>
+            
+          <div id="test"></div>
+            <div id="columnchart_values" style = "width: 96%;
+ height: 150px;" >        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">Companies by Location</div>
+        <div class="panel-body">
+          <div class = "loader">
+            <img src="img/three-dots.svg">
+           </div>
+          <div class="companies-by-location">
+            <div id="piechart" style="width: 350px;height: 200px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">News</div>
+        <div class="panel-body">
+          <div class = "loader">
+            <img src="img/three-dots.svg">
+          </div>
+          <div id="news-list">
+            
+          </div>
+            <div class="nav">
+              <button class="prev"> previous </button>
+              <button class="next"> next </button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="js/libs/charts.js"></script>
+<script type="text/javascript" src="js/views/companyBylocation.js"></script>
+<script type="text/javascript" src="js/views/ListOfCompanies.js"></script>
+<script type="text/javascript" src="js/views/CompanyPartners.js"></script>
+<script type="text/javascript" src="js/views/totalCompanies.js"></script>
+<script type="text/javascript" src="js/views/news.js"></script>
+
+<body>
+</body>
+
+</html>
